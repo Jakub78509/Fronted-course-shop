@@ -1,0 +1,22 @@
+@import "./variables";
+@import "./global";
+@import "./font";
+@import "./typography";
+
+// components
+@import "./components/header/header";
+@import "./components/header/headerCart";
+@import "./components/header/hambugerIcon";
+@import "./components/header/mobileMenu";
+@import "./components/footer";
+@import "./components/forms";
+@import "./components/categoryCard";
+@import "./components/products/productItemPreview";
+@import "./components/products/productDetail.scss";
+@import "./components/button";
+@import "./components/checkbox";
+
+// pages
+@import "./pages/cookies";
+@import "./pages/gdpr";
+@import "./pages/vop";

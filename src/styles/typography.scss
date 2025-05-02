@@ -1,0 +1,32 @@
+p {
+  font-size: clamp(0.8rem, 0.8vw, 1.3rem);
+  line-height: 1.2;
+}
+
+p.small,
+span.small {
+  font-size: clamp(0.7rem, 0.7vw, 1.1rem);
+  color: $grey !important;
+}
+
+p.grey {
+  color: $grey !important;
+  line-height: 1;
+}
+
+p.grey--larger {
+  color: $grey !important;
+  line-height: 1.4;
+}
+
+p,
+li,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+}
