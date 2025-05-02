@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "types": ["cypress"],
+    "baseUrl": "./src",
+    "paths": {
+      "@lib/*": ["aaa-temp/lib/*"],
+      "@modules/*": ["aaa-temp/modules/*"],
+      "@pages/*": ["aaa-temp/pages/*"],
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"],
+      "@constants/*": ["constants/*"],
+      "@data/*": ["data/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@utils/*": ["utils/*"],
+      "@public/*": ["public/*"],
+      "@context/*": ["context/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "cypress/support/index.js",
+    "cypress/support/commands.js",
+    "cypress/integration/product.spec.js",
+    "cypress/plugins/index.js",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    ".nyc_output",
+    "cypress-coverage",
+    "coverage",
+    "jest-coverage"
+  ]
+}
